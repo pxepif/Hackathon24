@@ -6,3 +6,8 @@ h1{
 #second_h1{
     color: blue;
 }
+
+h2{
+    font-family: Ariel;
+    color: rgb(210, 12, 12);
+}
