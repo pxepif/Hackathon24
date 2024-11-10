@@ -48,7 +48,7 @@
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 }).addTo(map);
 
-                fetch("C:\Users\epifap\OneDrive - Rensselaer Polytechnic Institute\Desktop\Hackathon\Hackathon24\Subway.txt");
+                fetch("Subway.txt");
                 .then(response => response.text())
                 .then(data => {
                     const stations = data.split('],'); // Split each station entry, might need adjusting
