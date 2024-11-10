@@ -71,6 +71,8 @@
                             // Locate coordinates right after the keyword
                             const lat = parseFloat(stationData[stationData.indexOf(`"${keywords.find(keyword => stationEntry.includes(`"${keyword}"`))}"`) + 2].replace(/"/g, ''));
                             const lon = parseFloat(stationData[stationData.indexOf(`"${keywords.find(keyword => stationEntry.includes(`"${keyword}"`))}"`) + 3].replace(/"/g, ''));
+                            
+                            console.log(`Lat ${lat}, Lon ${lon}`);
 
                             if (!isNaN(lat) && !isNaN(lon)) {
                                 L.marker([lat, lon])
